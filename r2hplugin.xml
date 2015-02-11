@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2015 R2H B.V. (http://www.r2h.nl). All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+-->
+<extension type="plugin" version="1.0" group="content" method="upgrade">
+	<name>PLG_CONTENT_R2HPLUGIN</name>
+	<author>Rick Spaan</author>
+	<creationDate>February 2015</creationDate>
+	<copyright>Copyright (c) 2015 R2HB.V. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>rick@r2h.nl</authorEmail>
+	<authorUrl>http://www.r2h.nl</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		<p>Here a description about the plugin</p>
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="r2hplugin">r2hplugin.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<media folder="media" destination="plg_content_r2hplugin">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_r2hplugin.ini</language>
+		<language tag="en-GB">en-GB.plg_content_r2hplugin.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="r2htextvalue"
+					type="text"
+					default="This is replaced text!!!"
+					label="PLG_CONTENT_R2HPLUGIN_TEXT"
+					description="PLG_CONTENT_R2HPLUGIN_TEXT_DESC" 
+				/>
+				<field
+					name="web_property_id"
+					type="text"
+					default="UA-XXXXXXX-X"
+					label="PLG_CONTENT_R2HPLUGIN_WP"
+					description="PLG_CONTENT_R2HPLUGIN_WP_DESC"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
